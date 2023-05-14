@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 
 const { generateHash } = require("../utils/hashProvider");
 
+const userRoles = ['customer', 'admin'];
+
 const UserSchema = new mongoose.Schema(
   {
     name: {
@@ -21,6 +23,11 @@ const UserSchema = new mongoose.Schema(
     age: {
       type: Number,
     },
+    role:{
+      type: String,
+      enum: userRoles,
+      required: true
+    }
   },
   {
     timestamps: true,

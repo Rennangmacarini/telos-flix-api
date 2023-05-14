@@ -41,9 +41,12 @@ const create = async (request, response) => {
       email,
       password,
       age,
+      role:'customer'
     });
 
-    return response.status(201).json(user);
+    const {role: omit, ...userWithoutRole} = user.toObject();
+
+    return response.status(201).json(userWithoutRole);
   } catch (err) {
     return response.status(400).json({
       error: "@users/create",
@@ -51,6 +54,39 @@ const create = async (request, response) => {
     });
   }
 };
+
+const createAdmin = async (request, response) => {
+  const { name, email, password, age } = request.body;
+
+   const userRole = request.user.role;  
+
+  if(userRole !== 'admin'){
+    return response.status(403).json({
+      message: "You're not authorized to perfomr this action"
+    });
+  };  
+
+  try {
+    const user = await UserModel.create({
+      name,
+      email,
+      password,
+      age,
+      role:'admin'
+    });
+    
+    const {role: omit, ...userWithoutRole} = user.toObject();
+
+
+    return response.status(201).json(userWithoutRole);
+  } catch (err) {
+    return response.status(400).json({
+      error: "@users/create",
+      message: err.message || "Failed to create user",
+    });
+  }
+};
+
 
 const update = async (request, response) => {
   const { id } = request.params;
@@ -104,6 +140,7 @@ module.exports = {
   list,
   getById,
   create,
+  createAdmin,
   update,
   remove,
 };

@@ -20,19 +20,23 @@ const verifyAuthenticate = (request, response, next) => {
   };
 
   if (prefix !== "Bearer") {
+    console.log(prefix)
     return response.status(401).json(invalidTokenMessage);
   }
 
   if (!token) {
+    console.log(token)
     return response.status(401).json(invalidTokenMessage);
   }
 
   jwt.verify(token, JWT_SECRET, (err, decoded) => {
-    if (err) {
+    if (err) {     
+      
       return response.status(401).json(invalidTokenMessage);
-    }
+    }    
 
     request.user = decoded;
+    console.log(decoded)
 
     return next();
   });
