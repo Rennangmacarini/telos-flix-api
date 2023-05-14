@@ -44,6 +44,37 @@ const getById = async (request, response) => {
   }
 };
 
+const getByGenre = async(request, response) => {
+  try{
+
+      const genres = await MovieModel.aggregate([
+        {$unwind: "$genres"},
+        {$group:{_id: "$genres"}},
+        {
+          $group:{
+            _id: null,
+            genres:{$push:"$_id"}
+          }
+        },
+        {
+          $project: {
+            _id: 0,
+            genres: 1
+          }
+        }
+      ]);
+
+      return response.json(genres[0].genres);
+
+  }catch(err){
+      response.status(500).json({
+          error:'@genres/getByGenres',
+          message: err.message || 'Failed to retrieve genres of movies'
+      })
+  }
+}
+
+
 const create = async (request, response) => {
   const { title, description, year, genres, image, video } = request.body;
 
@@ -117,6 +148,7 @@ const remove = async (request, response) => {
 module.exports = {
   list,
   getById,
+  getByGenre,
   create,
   update,
   remove,
