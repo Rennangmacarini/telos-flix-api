@@ -20,12 +20,12 @@ const verifyAuthenticate = (request, response, next) => {
   };
 
   if (prefix !== "Bearer") {
-    console.log(prefix)
+    
     return response.status(401).json(invalidTokenMessage);
   }
 
   if (!token) {
-    console.log(token)
+    
     return response.status(401).json(invalidTokenMessage);
   }
 
@@ -35,8 +35,7 @@ const verifyAuthenticate = (request, response, next) => {
       return response.status(401).json(invalidTokenMessage);
     }    
 
-    request.user = decoded;
-    console.log(decoded)
+    request.user = decoded;    
 
     return next();
   });
