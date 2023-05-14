@@ -8,7 +8,7 @@ const {verifyAdmin} = require('../middlewares/verifyAdmin');
 const routes = Router();
 
 routes.get("/movies", moviesController.list);
-routes.get("/movies/:id", moviesController.getById);
+routes.get("/movies/:id",verifyAuthenticate, moviesController.getById);
 
 routes.post("/movies", verifyAuthenticate, verifyAdmin, moviesController.create);
 

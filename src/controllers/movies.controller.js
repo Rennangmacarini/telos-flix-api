@@ -23,7 +23,19 @@ const getById = async (request, response) => {
       throw new Error();
     }
 
-    return response.json(movie);
+    //verificando se o usuario esta autenticado
+    if(request.isAuthenticated){
+
+      return response.json(movie);
+
+    } else {      
+
+      const {video, ...movieWithoutVideo} = movie.toObject();
+
+      return response.json(movieWithoutVideo);
+
+    }
+    
   } catch (err) {
     return response.status(400).json({
       error: "@movies/getById",
