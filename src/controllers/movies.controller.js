@@ -1,10 +1,32 @@
 const MovieModel = require("../model/movie.model");
 
+const {validationResult} = require('express-validator');
+
 const list = async (request, response) => {
   try {
-    const movies = await MovieModel.find();
+        
+    const errors = validationResult(request);
+    if(!errors.isEmpty()){
+      return response.status(422).json({errors: errors.array()});
+    }
+
+    const page = parseInt(request.query.page) || 1;
+
+    const limit = 10;
+
+    const queryTitle = request.query.title ? {title: {$regex: request.query.title, $options: 'i'}} : {};
+
+    const queryGenres = request.query.genres ? {genres: {$in:request.query.genres.split(',')}} : {};
+
+    const query = {
+      ...queryTitle,
+      ...queryGenres
+    }
+
+    const movies = await MovieModel.paginate(query,{page,limit});
 
     return response.json(movies);
+
   } catch (err) {
     return response.status(400).json({
       error: "@movies/list",
