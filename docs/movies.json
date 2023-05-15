@@ -1,0 +1,206 @@
+[{
+  "title": "The Shawshank Redemption",
+  "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+  "year": 1994,
+  "genres": [
+    "Drama"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/9O7gLzmreU0nGkIB6K3BsJbzvNv.jpg",
+  "video": "https://www.youtube.com/watch?v=6hB3S9bIaco"
+},{
+  "title": "The Matrix",
+  "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+  "year": 1999,
+  "genres": [
+    "Action",
+    "Sci-Fi"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/hEpWvX6Bp79eLxY1kX5ZZJcme5U.jpg",
+  "video": "https://www.youtube.com/watch?v=vKQi3bBA1y8"
+},{
+  "title": "The Lord of the Rings: The Fellowship of the Ring",
+  "description": "A young hobbit named Frodo Baggins inherits a powerful ring and must journey across Middle-earth to destroy it before it falls into the hands of the evil Lord Sauron.",
+  "year": 2001,
+  "genres": [
+    "Adventure",
+    "Fantasy"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg",
+  "video": "https://www.youtube.com/watch?v=V75dMMIW2B4"
+},{
+  "title": "Iron Man",
+  "description": "Billionaire businessman Tony Stark is kidnapped and forced to build a devastating weapon, but instead he creates a high-tech suit of armor and escapes to become the superhero Iron Man.",
+  "year": 2008,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/78lPtwv72eTNqFW9COBYI0dWDJa.jpg",
+  "video": "https://www.youtube.com/watch?v=8hYlB38asDY"
+},{
+  "title": "Thor",
+  "description": "The mighty Thor is banished from Asgard to Earth, where he must learn to live among humans while facing his brother Loki and protecting the world from a cosmic threat.",
+  "year": 2011,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/bIuOWTtyFPjsFDevqvF3QrD1aun.jpg",
+  "video": "https://www.youtube.com/watch?v=JOddp-nlNvQ"
+},{
+  "title": "Captain America: The First Avenger",
+  "description": "Steve Rogers, a scrawny young man, volunteers for an experimental program that transforms him into the super-soldier Captain America, who fights against the criminal organization HYDRA during World War II.",
+  "year": 2011,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/vSNxAJTlD0r02V9sPYpOjqDZXUK.jpg",
+  "video": "https://www.youtube.com/watch?v=JerVrbLldXw"
+},{
+  "title": "The Avengers",
+  "description": "The Avengers unite to fight against Loki and an alien army that threatens to destroy Earth.",
+  "year": 2012,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/RYMX2wcKCBAr24UyPD7xwmjaTn.jpg",
+  "video": "https://www.youtube.com/watch?v=eOrNdBpGMv8"
+},{
+  "title": "Iron Man 3",
+  "description": "Tony Stark battles an enemy who knows everything about him, while dealing with his own internal demons and facing the consequences of being a superhero.",
+  "year": 2013,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/x8uRXyknGqCGsNyY6GFKGjpY7kB.jpg",
+  "video": "https://www.youtube.com/watch?v=kEIVPiTuYkQ"
+},{
+  "title": "Thor: The Dark World",
+  "description": "Thor fights to save the Nine Realms from a dark enemy who threatens to destroy the universe.",
+  "year": 2013,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/bnX5PqAdQZRXSw3aX3DutDcdso5.jpg",
+  "video": "https://www.youtube.com/watch?v=npvJ9FTgZbM"
+},{
+  "title": "Ant-Man",
+  "description": "Ex-con Scott Lang is recruited by a mentor to become Ant-Man and protect the secret behind the technology that gives him the ability to shrink in size but increase in strength.",
+  "year": 2015,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/D6e8RJf2qUstnfkTslTXNTUAlT.jpg",
+  "video": "https://www.youtube.com/watch?v=pWdKf3MneyI"
+},{
+  "title": "Avengers: Age of Ultron",
+  "description": "The Avengers fight against Ultron, a robotic villain who seeks to eradicate humanity.",
+  "year": 2015,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/4ssDuvEDkSArWEdyBl2X5EHvYKU.jpg",
+  "video": "https://www.youtube.com/watch?v=tmeOjFno6Do"
+},{
+  "title": "Captain America: Civil War",
+  "description": "Captain America and Iron Man lead opposing sides in the battle for control of superhero technology, while a new threat arises.",
+  "year": 2016,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/kSBXou5Ac7vEqKd97wotJumyJvU.jpg",
+  "video": "https://www.youtube.com/watch?v=dKrVegVI0Us"
+},{
+  "title": "Doctor Strange",
+  "description": "Surgeon Stephen Strange seeks a cure for his injured hands from a car accident and discovers a world of magic and alternative dimensions.",
+  "year": 2016,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/4PiiNGXj1KENTmCBHeN6Mskj2Fq.jpg",
+  "video": "https://www.youtube.com/watch?v=HSzx-zryEgM"
+},{
+  "title": "My Neighbor Totoro",
+  "description": "Two sisters move to the countryside and discover a world of friendly spirits, including Totoro, a forest spirit who helps them cope with their new environment.",
+  "year": 1988,
+  "genres": [
+    "Animation",
+    "Family",
+    "Fantasy"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/s1cVTQEZYn4nSjZLnFbzLP0j8y2.jpg",
+  "video": "https://www.youtube.com/watch?v=92a7Hj0ijLs"
+},{
+  "title": "Spirited Away",
+  "description": "Chihiro and her parents stumble upon a seemingly abandoned amusement park. After her parents are turned into pigs, Chihiro must navigate a magical world filled with strange creatures and find a way to save her parents and escape.",
+  "year": 2001,
+  "genres": [
+    "Animation",
+    "Adventure",
+    "Fantasy"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/dL11DBPcRhWWnJcFXl9A07MrqTI.jpg",
+  "video": "https://www.youtube.com/watch?v=ByXuk9QqQkk"
+},{
+  "title": "Princess Mononoke",
+  "description": "A young warrior, Ashitaka, becomes embroiled in a conflict between the forest gods and the humans who consume their resources, and he must find a way to restore the balance between the two.",
+  "year": 1997,
+  "genres": [
+    "Animation",
+    "Action",
+    "Adventure"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/2TeJfUZMGolfDdW6DKhfIWqvq8y.jpg",
+  "video": "https://www.youtube.com/watch?v=4OiMOHRDs14"
+},{
+  "title": "Howl's Moving Castle",
+  "description": "Sophie, a young girl who works in a hat shop, is cursed by a witch and transformed into an old woman. She seeks refuge in the moving castle of the wizard Howl, and together they embark on a journey to break the curse.",
+  "year": 2004,
+  "genres": [
+    "Animation",
+    "Adventure",
+    "Family"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/giYLtqGPtEQC7TJ0C1V60zUsBQi.jpg",
+  "video": "https://www.youtube.com/watch?v=iwROgK94zcM"
+},{
+  "title": "Kiki's Delivery Service",
+  "description": "Kiki, a young witch, moves to a seaside town to begin her training and starts a delivery service using her broomstick. Along the way, she makes new friends and learns to become independent.",
+  "year": 1989,
+  "genres": [
+    "Animation",
+    "Adventure",
+    "Family"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/2DxywNHcxT69loVNBMFL4a56l8S.jpg",
+  "video": "https://www.youtube.com/watch?v=4bG17OYs-GA"
+},{
+  "title": "Captain America: The Winter Soldier",
+  "description": "Captain America teams up with Black Widow to expose a dark conspiracy while fighting against a mysterious assassin known as the Winter Soldier.",
+  "year": 2014,
+  "genres": [
+    "Action",
+    "Adventure",
+    "Science Fiction"
+  ],
+  "image": "https://www.themoviedb.org/t/p/original/tVFRpFw3xTedxr6jIXKQcIJUzdI.jpg",
+  "video": "https://www.youtube.com/watch?v=7SlILk2WMTI"
+}]
