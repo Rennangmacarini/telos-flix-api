@@ -1,4 +1,4 @@
-#Como rodar/testar a aplicação em node.js
+# Como rodar/testar a aplicação em node.js
 
 1. Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixar o Node.js em https://nodejs.org.
 
