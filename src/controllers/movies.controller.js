@@ -75,7 +75,7 @@ const getByGenre = async(request, response) => {
       return response.json(genres);
 
   }catch(err){
-      response.status(500).json({
+      response.status(400).json({
           error:'@genres/getByGenres',
           message: err.message || 'Failed to retrieve genres of movies'
       })
