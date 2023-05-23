@@ -44,6 +44,28 @@ const getById = async (request, response)=>{
     }
 };
 
+const getByMovieId = async(request,response)=>{
+    try{
+        const movieId = request.params.movieId;
+        const comments = await CommentModel.find({movie_id: movieId }).populate('user_id', '-password');
+
+        if(comments.length === 0){
+            return response.status(404).json({
+                error:'@comments/getbyMovieId',
+                message: `No comments found for movie with id ${movie_id}`
+            });
+        }
+
+        return response.json(comments);
+
+    } catch(err){
+        response.status(400).json({
+            error:'comments/getByMovieId',
+            message: err.message || 'Failed to retrieve comments'
+        })
+    }
+}
+
 const create = async(request, response)=>{
     
     const {movie_id, content, rating} = request.body;
@@ -168,7 +190,8 @@ const remove = async(request, response)=>{
 
 module.exports = {
     list,
-    getById,    
+    getById,  
+    getByMovieId,  
     create,
     update,
     remove

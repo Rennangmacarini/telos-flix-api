@@ -8,6 +8,7 @@ const routes = Router();
 
 routes.get('/comments', commentsController.list);
 routes.get('/comments/:id', commentsController.getById);
+routes.get('/comments/movies/:movieId', commentsController.getByMovieId);
 routes.post('/comments', verifyAuthenticate, commentsController.create);
 
 routes.put('/comments/:id', verifyAuthenticate, commentsController.update);
