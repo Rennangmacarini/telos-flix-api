@@ -68,25 +68,11 @@ const getById = async (request, response) => {
 
 const getByGenre = async(request, response) => {
   try{
+      const genres = await MovieModel.distinct('genres');
 
-      const genres = await MovieModel.aggregate([
-        {$unwind: "$genres"},
-        {$group:{_id: "$genres"}},
-        {
-          $group:{
-            _id: null,
-            genres:{$push:"$_id"}
-          }
-        },
-        {
-          $project: {
-            _id: 0,
-            genres: 1
-          }
-        }
-      ]);
+      genres.sort();
 
-      return response.json(genres[0].genres);
+      return response.json(genres);
 
   }catch(err){
       response.status(500).json({
