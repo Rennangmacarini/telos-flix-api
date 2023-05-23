@@ -7,7 +7,7 @@ const {verifyAdmin} = require('../middlewares/verifyAdmin');
 
 const routes = Router();
 
-routes.get("/movies", moviesController.list);
+routes.get("/movies",verifyAuthenticate, moviesController.list);
 routes.get("/movies/:id",verifyAuthenticate, moviesController.getById);
 routes.get("/genres", moviesController.getByGenre);
 

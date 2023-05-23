@@ -25,7 +25,17 @@ const list = async (request, response) => {
 
     const movies = await MovieModel.paginate(query,{page,limit});
 
-    return response.json(movies);
+    const moviesResponse = request.isAuthenticated
+    ? movies
+    : {
+        ...movies,
+        docs: movies.docs.map(({ _doc }) => {
+          const { video, ...movieWithoutVideo } = _doc;
+          return movieWithoutVideo;
+        }),
+      };
+
+  return response.json(moviesResponse);
 
   } catch (err) {
     return response.status(400).json({
